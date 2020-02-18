@@ -1,0 +1,248 @@
+.carousel {
+    font-family: 'Roboto';
+    position: relative;
+}
+
+.carousel__img {
+    width: 160px;
+    height: 160px;
+    border-radius: 4px;
+    margin-right: 8px;
+    margin-left: 8px;
+    display: grid;
+    position: relative;
+}
+
+.carousel__content {
+    overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.carousel__content::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel__items {
+    display: inline-flex;
+    z-index: 2;
+    position: relative;
+}
+
+.carousel__title {
+    color: white;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 23px;
+    margin-left: 16px;
+    position: relative;
+    z-index: 2
+}
+
+.carousel {
+    margin-top: 50px;
+}
+
+.carousel_1 {
+    margin-top: 60px!important;
+}
+
+.carousel__properties {
+    display: grid;
+    position: relative;
+    grid-gap: 20px;
+}
+
+.chevron {
+    display: none;
+    fill: black;
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 40%;
+    z-index: 3;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+}
+
+.chevron__right {
+    right: 40px;
+}
+
+.chevron__left {
+    transform: rotate(180deg);
+    left: 40px;
+    display: none;
+}
+
+.item__title {
+    color: white;
+    margin-top: 16px;
+    margin-bottom: 2px;
+    margin-left: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    z-index: 2
+}
+
+.item__subtitle {
+    color: #848585;
+    margin: 0;
+    margin-left: 8px;
+    font-size: 15px;
+    position: relative;
+    z-index: 2
+}
+
+.item__title_0 {
+    margin-left: 16px;
+}
+
+.item__subtitle_0 {
+    margin-left: 16px;
+}
+
+.item__logo {
+    z-index: 2;
+    cursor: pointer;
+}
+
+.item__logo_menu {
+    width: 16px;
+    justify-self: end;
+    align-self: center;
+    margin-right: 20px;
+}
+
+.item__logo_play {
+    width: 14px;
+    margin-left: 3px;
+}
+
+.logo__wrapper {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+    align-self: center;
+    margin-right: 26px;
+    cursor: pointer;
+    transition: all .1s ease-in;
+}
+
+.logo__wrapper:hover {
+    background-color: rgba(0, 0, 0, 1);
+    transform: scale(1.2);
+}
+
+.carousel__bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(to bottom, #00000063, transparent);
+    border-radius: 4px;
+}
+
+.carousel__img_0 {
+    margin-left: 16px;
+}
+
+@media (min-width: 615px) {
+    .carousel__img {
+        width: 180px;
+        height: 180px;
+        border-radius: 4px;
+        margin-right: 8px;
+        margin-left: 8px;
+        display: grid;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .carousel__properties {
+        visibility: hidden;
+    }
+
+    .carousel__img:hover > .carousel__properties {
+        visibility: visible;
+    }
+
+    .carousel__img_0, .item__title_0, .item__subtitle_0 {
+        margin-left: 0!important;
+    }
+    
+    .carousel__item_0, .carousel__title {
+        margin-left: 56px!important;
+    }
+
+    .carousel__item_7 {
+        margin-right: 56px!important;
+    }
+
+    .chevron {
+        display: block;
+    }
+
+    .chevron__left {
+        display: none;
+    }
+}
+
+@media (min-width: 935px) {
+    .carousel {
+        padding-right: 60px;
+    }
+
+    .carousel__item_7 {
+        margin-right: 0!important;
+    }
+
+    .carousel__img {
+        width: 190px;
+        height: 190px;
+        margin-right: 9px;
+        margin-left: 9px;
+    }
+
+    .carousel__title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .item__title {
+        font-size: 16px;
+    }
+    
+    .item__subtitle {
+        font-size: 16px;
+    }
+
+    .carousel {
+        margin-top: 110px;
+    }
+}
+
+@media (min-width: 1780px) {
+    .carousel {
+        width: fit-content;
+        justify-self: center;
+        padding-right: 0;
+     }
+    
+     .carousels {
+         display: grid;
+     }
+    
+     .chevron__right {
+        right: -10px;
+    }
+}

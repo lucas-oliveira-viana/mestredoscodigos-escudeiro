@@ -1,0 +1,98 @@
+.home {
+    z-index: -1;
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%, rgb(20, 20, 20) 90%), url(../../img/180721-disenchantment.png);
+    width: 100%;
+    height: 56vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.home__content {
+    display: grid;
+    max-width: 425px;
+    grid-template-rows: 24vw 50px 75px 24px;
+    padding-left: 27px;
+    z-index: 1;
+}
+
+.home__logo {
+    background: url(../../img/desencanto-logo.png);
+    width: 39vw;
+    height: 21vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 386px;
+    background-position: center center;
+    align-self: end;
+    grid-row: 2;
+}
+
+.home__temporada {
+    display: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    align-self: center;
+}
+
+.home__resumo {
+    display: none;
+    color: white;
+    font-size: 13px;
+    width: 260px;
+}
+
+.home__icon {
+    height: 9px;
+    width: 9px;
+    margin-right: 6px;
+}
+
+.home__buttons {
+    display: none;
+}
+
+.home__button {
+    cursor: pointer;
+    background-color: rgba(51, 51, 51, 0.4);
+    border: none;
+    font-size: 11px;
+    padding: 6px 20px;
+    color: white;
+    outline: 0;
+}
+
+.home__button:hover {
+    background-color: rgb(226, 226, 226);
+    color: rgb(10, 10, 10);
+}
+
+.home__button:hover > .home__icon {
+    filter: brightness(0%);
+}
+
+@media (min-width: 768px) {
+    .home__buttons, .home__resumo, .home__temporada {
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home__content {
+        grid-template-rows: 24vw 50px 168px 24px;
+    }
+
+    .home__temporada {
+        font-size: 21px;
+    }
+
+    .home__resumo {
+        font-size: 18px;
+        width: fit-content;
+    }
+
+    .home__button {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,5 @@
+$bs-sm: 768px;
+$bs-sm-max: 991px;
+$bs-md: 992px;
+$bs-md-max: 1199px;
+$bs-lg: 1200px;

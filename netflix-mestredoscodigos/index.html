@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/views/navbar.css">
+    <link rel="stylesheet" href="css/base/base.css">
+    <link rel="stylesheet" href="css/layout/layout.css">
+    <link rel="stylesheet" href="css/views/home.css">
+    <link rel="stylesheet" href="css/views/carousel.css">
+    <link rel="stylesheet" href="css/views/item.css">
+    <link rel="stylesheet" href="css/views/footer.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Netflix</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__left">
+            <div class="navbar__logo navbar__logo_main"></div>
+            <div class="navbar__navigation">
+                <label class="navigation__label">Navegar</label>
+                <ul class="navbar__options">
+                    <li class="options__item active">Início</li>
+                    <li class="options__item">Minha Lista</li>
+                    <li class="options__item">Séries</li>
+                    <li class="options__item">Filmes</li>
+                    <li class="options__item">Adicionados Recentemente</li>
+                </ul>
+                <div class="navigation__options">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a href="#" class="">Início</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="">Minha Lista</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="">Séries</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="">Filmes</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="">Adicionados Recentemente</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="navbar__right">
+            <div class="navbar__search">
+                <input type="text" class="search__input" placeholder="Títulos, gente e gênero">
+            </div>
+            <div class="navbar__logo navbar__logo_search"></div>
+            <div class="navbar__logo navbar__logo_invisible"></div>
+            <div class="navbar__logo navbar__logo_notifications"></div>
+            <div class="navbar__avatar"></div>
+        </div>
+    </nav>
+    <section class="home">
+        <div class="home__content">
+            <div class="home__logo"></div>
+            <span class="home__temporada">Assista à temporada 4 agora</span>
+            <span class="home__resumo">Toda princesa tem seus deveres, mas ela quer mesmo é encher a cara. E com um elfo
+                e um demônio como parceiros, levar o rei à loucura será uma tarefa fácil.</span>
+            <div class="home__buttons">
+                <button class="home__button_watch home__button"><img src="img/play-button.png"
+                        class="home__icon_assistir home__icon">Assistir</button>
+                <button class="home__button_mylist home__button"><img src="img/add.png"
+                        class="home__icon_mylist home__icon">Minha lista</button>
+                <button class="home__button_moreinfo home__button"><img src="img/information.png"
+                        class="home__icon_moreinfo home__icon">Mais Informações</button>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <div class="carousels">
+            <div class="carousel carousel_1">
+                <span class="carousel__title carousel__title_2">Minha lista</span>
+                <div class="carousel__content">
+                    <div class="carousel__items">
+                        <div class="carousel__arrows">
+                            <div class="carousel__move_previous carousel__move">
+                                <img class="carousel__icon" src="img/left-arrow-angle.png">
+                            </div>
+                            <div class="carousel__move_next carousel__move">
+                                <img class="carousel__icon" src="img/left-arrow-angle.png">
+                            </div>
+                        </div>
+                        <div class="carousel__right"></div>
+                        <div class="carousel__item carousel__item_0">
+                            <div class="play__icon">
+                                <div class="play__background">
+                                    <img src="img/play-button.png" alt="" class="play__content">
+                                </div>
+                            </div>
+                            <div class="second__line">
+                                <span class="line__relevance">93% relevante</span>
+                                <img class="line__age" src="img/age/age_10.png">
+                                <span class="line__duration">3 Temporadas</span>
+                            </div>
+                            <div class="third__line">
+                                <ul class="item__genders">
+                                    <li class="">Besteirol</li>
+                                    <li class="item__gender">Sitcom</li>
+                                    <li class="item__gender">Comédia</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel__item carousel__item_1">
+                            <div class="play__icon">
+                                <div class="play__background">
+                                    <img src="img/play-button.png" alt="" class="play__content">
+                                </div>
+                            </div>
+                            <div class="second__line">
+                                <span class="line__relevance">98% relevante</span>
+                                <img class="line__age" src="img/age/age_10.png">
+                                <span class="line__duration">5 Temporadas</span>
+                            </div>
+                            <div class="third__line">
+                                <ul class="item__genders">
+                                    <li class="">Ação</li>
+                                    <li class="item__gender">Anime</li>
+                                    <li class="item__gender">Comédia</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel__item carousel__item_2">
+                            <div class="play__icon">
+                                <div class="play__background">
+                                    <img src="img/play-button.png" alt="" class="play__content">
+                                </div>
+                            </div>
+                            <div class="second__line">
+                                <span class="line__relevance">96% relevante</span>
+                                <img class="line__age" src="img/age/age_10.png">
+                                <span class="line__duration">20 Temporadas</span>
+                            </div>
+                            <div class="third__line">
+                                <ul class="item__genders">
+                                    <li class="">Ação</li>
+                                    <li class="item__gender">Combate</li>
+                                    <li class="item__gender">Anime</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel__item carousel__item_3">
+                            <div class="play__icon">
+                                <div class="play__background">
+                                    <img src="img/play-button.png" alt="" class="play__content">
+                                </div>
+                            </div>
+                            <div class="second__line">
+                                <span class="line__relevance">93% relevante</span>
+                                <img class="line__age" src="img/age/age_10.png">
+                                <span class="line__duration">12 Temporadas</span>
+                            </div>
+                            <div class="third__line">
+                                <ul class="item__genders">
+                                    <li class="">Ação</li>
+                                    <li class="item__gender">Aventura</li>
+                                    <li class="item__gender">Anime</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel__item carousel__item_4">
+                            <div class="play__icon">
+                                <div class="play__background">
+                                    <img src="img/play-button.png" alt="" class="play__content">
+                                </div>
+                            </div>
+                            <div class="second__line">
+                                <span class="line__relevance">87% relevante</span>
+                                <img class="line__age" src="img/age/age_16.png">
+                                <span class="line__duration">3 Temporadas</span>
+                            </div>
+                            <div class="third__line">
+                                <ul class="item__genders">
+                                    <li class="">Suspense no Ar</li>
+                                    <li class="item__gender">Empolgantes</li>
+                                    <li class="item__gender">Assalto</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel__item carousel__item_5">
+                            <div class="play__icon">
+                                <div class="play__background">
+                                    <img src="img/play-button.png" alt="" class="play__content">
+                                </div>
+                            </div>
+                            <div class="second__line">
+                                <span class="line__relevance">89% relevante</span>
+                                <img class="line__age" src="img/age/age_14.png">
+                                <span class="line__duration">14 Temporadas</span>
+                            </div>
+                            <div class="third__line">
+                                <ul class="item__genders">
+                                    <li class="">Suspense no Ar</li>
+                                    <li class="item__gender">Médico</li>
+                                    <li class="item__gender">Drama</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel__item carousel__item_6">
+                            <div class="play__icon">
+                                <div class="play__background">
+                                    <img src="img/play-button.png" alt="" class="play__content">
+                                </div>
+                            </div>
+                            <div class="second__line">
+                                <span class="line__relevance">98% relevante</span>
+                                <img class="line__age" src="img/age/age_10.png">
+                                <span class="line__duration">5 Temporadas</span>
+                            </div>
+                            <div class="third__line">
+                                <ul class="item__genders">
+                                    <li class="">Ação</li>
+                                    <li class="item__gender">Anime</li>
+                                    <li class="item__gender">Comédia</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel__item carousel__item_7">
+                            <div class="play__icon">
+                                <div class="play__background">
+                                    <img src="img/play-button.png" alt="" class="play__content">
+                                </div>
+                            </div>
+                            <div class="second__line">
+                                <span class="line__relevance">96% relevante</span>
+                                <img class="line__age" src="img/age/age_10.png">
+                                <span class="line__duration">20 Temporadas</span>
+                            </div>
+                            <div class="third__line">
+                                <ul class="item__genders">
+                                    <li class="">Ação</li>
+                                    <li class="item__gender">Combate</li>
+                                    <li class="item__gender">Anime</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel__item carousel__item_8">
+                            <div class="play__icon">
+                                <div class="play__background">
+                                    <img src="img/play-button.png" alt="" class="play__content">
+                                </div>
+                            </div>
+                            <div class="second__line">
+                                <span class="line__relevance">93% relevante</span>
+                                <img class="line__age" src="img/age/age_10.png">
+                                <span class="line__duration">12 Temporadas</span>
+                            </div>
+                            <div class="third__line">
+                                <ul class="item__genders">
+                                    <li class="">Ação</li>
+                                    <li class="item__gender">Aventura</li>
+                                    <li class="item__gender">Anime</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel__item carousel__item_9">
+                            <div class="play__icon">
+                                <div class="play__background">
+                                    <img src="img/play-button.png" alt="" class="play__content">
+                                </div>
+                            </div>
+                            <div class="second__line">
+                                <span class="line__relevance">87% relevante</span>
+                                <img class="line__age" src="img/age/age_16.png">
+                                <span class="line__duration">3 Temporadas</span>
+                            </div>
+                            <div class="third__line">
+                                <ul class="item__genders">
+                                    <li class="">Suspense no Ar</li>
+                                    <li class="item__gender">Empolgantes</li>
+                                    <li class="item__gender">Assalto</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel__item carousel__item_10">
+                            <div class="play__icon">
+                                <div class="play__background">
+                                    <img src="img/play-button.png" alt="" class="play__content">
+                                </div>
+                            </div>
+                            <div class="second__line">
+                                <span class="line__relevance">89% relevante</span>
+                                <img class="line__age" src="img/age/age_14.png">
+                                <span class="line__duration">14 Temporadas</span>
+                            </div>
+                            <div class="third__line">
+                                <ul class="item__genders">
+                                    <li class="">Suspense no Ar</li>
+                                    <li class="item__gender">Médico</li>
+                                    <li class="item__gender">Drama</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel carousel_2">
+                <span class="carousel__title carousel__title_2">Mais populares</span>
+                <div class="carousel__content">
+                    <div class="carousel__items">
+                        <div class="carousel__arrows">
+                            <div class="carousel__move_previous carousel__move">
+                                <img class="carousel__icon" src="img/left-arrow-angle.png">
+                            </div>
+                            <div class="carousel__move_next carousel__move">
+                                <img class="carousel__icon" src="img/left-arrow-angle.png">
+                            </div>
+                        </div>
+                        <div class="carousel__right"></div>
+                        <div class="carousel__right"></div>
+                        <div class="carousel__item carousel__item_0">
+                            <div class="play__icon">
+                                <div class="play__background">
+                                    <img src="img/play-button.png" alt="" class="play__content">
+                                </div>
+                            </div>
+                            <div class="second__line">
+                                <span class="line__relevance">93% relevante</span>
+                                <img class="line__age" src="img/age/age_10.png">
+                                <span class="line__duration">3 Temporadas</span>
+                            </div>
+                            <div class="third__line">
+                                <ul class="item__genders">
+                                    <li class="">Besteirol</li>
+                                    <li class="item__gender">Sitcom</li>
+                                    <li class="item__gender">Comédia</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel__item carousel__item_1">
+                            <div class="play__icon">
+                                <div class="play__background">
+                                    <img src="img/play-button.png" alt="" class="play__content">
+                                </div>
+                            </div>
+                            <div class="second__line">
+                                <span class="line__relevance">98% relevante</span>
+                                <img class="line__age" src="img/age/age_10.png">
+                                <span class="line__duration">5 Temporadas</span>
+                            </div>
+                            <div class="third__line">
+                                <ul class="item__genders">
+                                    <li class="">Ação</li>
+                                    <li class="item__gender">Anime</li>
+                                    <li class="item__gender">Comédia</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel__item carousel__item_2">
+                            <div class="play__icon">
+                                <div class="play__background">
+                                    <img src="img/play-button.png" alt="" class="play__content">
+                                </div>
+                            </div>
+                            <div class="second__line">
+                                <span class="line__relevance">96% relevante</span>
+                                <img class="line__age" src="img/age/age_10.png">
+                                <span class="line__duration">20 Temporadas</span>
+                            </div>
+                            <div class="third__line">
+                                <ul class="item__genders">
+                                    <li class="">Ação</li>
+                                    <li class="item__gender">Combate</li>
+                                    <li class="item__gender">Anime</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel__item carousel__item_3">
+                            <div class="play__icon">
+                                <div class="play__background">
+                                    <img src="img/play-button.png" alt="" class="play__content">
+                                </div>
+                            </div>
+                            <div class="second__line">
+                                <span class="line__relevance">93% relevante</span>
+                                <img class="line__age" src="img/age/age_10.png">
+                                <span class="line__duration">12 Temporadas</span>
+                            </div>
+                            <div class="third__line">
+                                <ul class="item__genders">
+                                    <li class="">Ação</li>
+                                    <li class="item__gender">Aventura</li>
+                                    <li class="item__gender">Anime</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel__item carousel__item_4">
+                            <div class="play__icon">
+                                <div class="play__background">
+                                    <img src="img/play-button.png" alt="" class="play__content">
+                                </div>
+                            </div>
+                            <div class="second__line">
+                                <span class="line__relevance">87% relevante</span>
+                                <img class="line__age" src="img/age/age_16.png">
+                                <span class="line__duration">3 Temporadas</span>
+                            </div>
+                            <div class="third__line">
+                                <ul class="item__genders">
+                                    <li class="">Suspense no Ar</li>
+                                    <li class="item__gender">Empolgantes</li>
+                                    <li class="item__gender">Assalto</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel__item carousel__item_5">
+                            <div class="play__icon">
+                                <div class="play__background">
+                                    <img src="img/play-button.png" alt="" class="play__content">
+                                </div>
+                            </div>
+                            <div class="second__line">
+                                <span class="line__relevance">89% relevante</span>
+                                <img class="line__age" src="img/age/age_14.png">
+                                <span class="line__duration">14 Temporadas</span>
+                            </div>
+                            <div class="third__line">
+                                <ul class="item__genders">
+                                    <li class="">Suspense no Ar</li>
+                                    <li class="item__gender">Médico</li>
+                                    <li class="item__gender">Drama</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel__item carousel__item_6">
+                            <div class="play__icon">
+                                <div class="play__background">
+                                    <img src="img/play-button.png" alt="" class="play__content">
+                                </div>
+                            </div>
+                            <div class="second__line">
+                                <span class="line__relevance">98% relevante</span>
+                                <img class="line__age" src="img/age/age_10.png">
+                                <span class="line__duration">5 Temporadas</span>
+                            </div>
+                            <div class="third__line">
+                                <ul class="item__genders">
+                                    <li class="">Ação</li>
+                                    <li class="item__gender">Anime</li>
+                                    <li class="item__gender">Comédia</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel__item carousel__item_7">
+                            <div class="play__icon">
+                                <div class="play__background">
+                                    <img src="img/play-button.png" alt="" class="play__content">
+                                </div>
+                            </div>
+                            <div class="second__line">
+                                <span class="line__relevance">96% relevante</span>
+                                <img class="line__age" src="img/age/age_10.png">
+                                <span class="line__duration">20 Temporadas</span>
+                            </div>
+                            <div class="third__line">
+                                <ul class="item__genders">
+                                    <li class="">Ação</li>
+                                    <li class="item__gender">Combate</li>
+                                    <li class="item__gender">Anime</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel__item carousel__item_8">
+                            <div class="play__icon">
+                                <div class="play__background">
+                                    <img src="img/play-button.png" alt="" class="play__content">
+                                </div>
+                            </div>
+                            <div class="second__line">
+                                <span class="line__relevance">93% relevante</span>
+                                <img class="line__age" src="img/age/age_10.png">
+                                <span class="line__duration">12 Temporadas</span>
+                            </div>
+                            <div class="third__line">
+                                <ul class="item__genders">
+                                    <li class="">Ação</li>
+                                    <li class="item__gender">Aventura</li>
+                                    <li class="item__gender">Anime</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel__item carousel__item_9">
+                            <div class="play__icon">
+                                <div class="play__background">
+                                    <img src="img/play-button.png" alt="" class="play__content">
+                                </div>
+                            </div>
+                            <div class="second__line">
+                                <span class="line__relevance">87% relevante</span>
+                                <img class="line__age" src="img/age/age_16.png">
+                                <span class="line__duration">3 Temporadas</span>
+                            </div>
+                            <div class="third__line">
+                                <ul class="item__genders">
+                                    <li class="">Suspense no Ar</li>
+                                    <li class="item__gender">Empolgantes</li>
+                                    <li class="item__gender">Assalto</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="carousel__item carousel__item_10">
+                            <div class="play__icon">
+                                <div class="play__background">
+                                    <img src="img/play-button.png" alt="" class="play__content">
+                                </div>
+                            </div>
+                            <div class="second__line">
+                                <span class="line__relevance">89% relevante</span>
+                                <img class="line__age" src="img/age/age_14.png">
+                                <span class="line__duration">14 Temporadas</span>
+                            </div>
+                            <div class="third__line">
+                                <ul class="item__genders">
+                                    <li class="">Suspense no Ar</li>
+                                    <li class="item__gender">Médico</li>
+                                    <li class="item__gender">Drama</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <footer id="footer" class="footer">
+        <div class="author__infos">
+            <span class="author__info">Lucas de Oliveira Viana</span><br>
+            <span class="author__info">lucas.viana@db1.com.br</span>
+        </div>
+    </footer>
+</body>
+
+<script src="index.js"></script>
+
+</html>

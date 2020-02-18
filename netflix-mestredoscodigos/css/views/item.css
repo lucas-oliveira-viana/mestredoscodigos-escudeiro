@@ -1,0 +1,99 @@
+.carousel__item {
+    width: 30vw;
+    height: 17vw;
+    max-width: 250px;
+    max-height: 140px;
+    margin-right: 4px;
+    transform: translateX(0%);
+    transition: all .4s ease-in-out;
+}
+
+.item__name,
+.play__icon,
+.second__line,
+.third__line {
+    display: none;
+}
+
+.play__icon {
+    grid-row-start: 2;
+    margin-bottom: 5px;
+}
+
+.line__age {
+    width: 17px;
+    margin: 0 3px -3px 3px;
+}
+
+.item__name {
+    grid-row-start: 3;
+}
+
+.second__line {
+    grid-row-start: 4;
+}
+
+.third__line {
+    grid-row-start: 5;
+}
+
+.play__background {
+    display: inline-block;
+    background: #000000b0;
+    border-radius: 50%;
+    padding: 5px 7px 4px 9px;
+    width: 32px;
+    border: 2px solid #dadada;
+    text-shadow: 1px 1px 1px #0000004d;
+}
+
+.play__content {
+    width: 12px;
+}
+
+.line__relevance {
+    color: rgb(24, 201, 68);
+    font-weight: bold;
+}
+
+@media (min-width: 786px) {
+    .carousel__item:hover {
+        z-index: 1000;
+        max-width: 330px;
+        max-height: 185px;
+        width: 85vw;
+        height: 49vw;
+        display: grid;
+        grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+        cursor: pointer;
+    }
+
+    .carousel__item:hover>.item__name,
+    .carousel__item:hover>.second__line,
+    .carousel__item:hover>.third__line,
+    .carousel__item:hover>.play__icon {
+        display: block;
+        color: white;
+        margin-left: 10px;
+    }
+
+    .item__genders {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    .item__gender {
+        margin-left: 27px;
+        list-style-type: none;
+    }
+
+    .item__gender::before {
+        content: "\2022";
+        color: #636363;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+}

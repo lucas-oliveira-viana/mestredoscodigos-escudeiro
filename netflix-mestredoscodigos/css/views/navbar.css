@@ -1,0 +1,191 @@
+.navbar__logo_main {
+    background: url(../../img/netflix-logo-5.png);
+    min-width: 79.92px;
+    min-height: 21px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.navbar__left {
+    display: flex;
+}
+
+.navbar__search {
+    position: absolute;
+    width: 0px;
+    height: 32px;
+    background-color: black;
+    border: none;
+    top: 4px;
+    right: 100px;
+    display: block;
+    transition: all .2s ease-in;
+}
+
+.search__input {
+    display: block;
+    margin-left: 33px;
+    margin-top: 6px;
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    opacity: 0;
+    color: white;
+    transition: all .2s ease-in;
+}
+
+.navbar__right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: end;
+    align-self: center;
+    position: relative;
+}
+
+.navbar__navigation {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navigation__options {
+    position: absolute;
+    top: 42px;
+    right: -85px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-top: 2px solid white;
+    display: none;
+}
+
+.navigation__options::before {
+    content: '';
+    width: 0;
+    height: 0;
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid white;
+    cursor: pointer;
+    position: absolute;
+    bottom: 266px;
+    left: 115px;
+}
+
+.navigation__label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.navigation__list {
+    padding-left: 0;
+    text-align: center;
+    margin: 0;
+}
+
+.navigation__item {
+    padding: 15px 70px;
+}
+
+.navigation__item:hover {
+    cursor: pointer;
+    background-color: rgba(34, 34, 34, 0.9);
+}
+
+.navigation__label::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: white transparent transparent transparent;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.navbar__logo {
+    align-self: center;
+    cursor: pointer;
+}
+
+.navbar__logo_search {
+    background: url(../../img/magnifying-glass.png);
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    transition: all .2s ease-in
+}
+
+.navbar__logo_invisible {
+    width: 16px;
+    height: 16px;
+}
+
+.navbar__logo_notifications {
+    background: url(../../img/notification.png);
+    width: 24px;
+    height: 24px;
+}
+
+.navbar__avatar {
+    background: url(../../img/avatar.png);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.navbar__options {
+    padding: 0
+}
+
+.options__item {
+    color: #e5e5e5;
+    font-size: 14px;
+    display: inline;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.options__item:hover {
+    color: #b3b3b3;
+}
+
+.options__item.active {
+    font-weight: bold;
+    color: white;
+}
+
+.scrolled {
+    background-color: #141414;
+}
+
+.navbar__options {
+    display: none;
+}
+
+.navbar__navigation:hover .navigation__options {
+    display: block
+}
+
+@media (min-width: 885px) {
+    .navigation__label {
+        display: none
+    }
+
+    .navbar__options {
+        display: block
+    }
+
+    .navbar__navigation:hover .navigation__options {
+        display: none
+    }
+}
