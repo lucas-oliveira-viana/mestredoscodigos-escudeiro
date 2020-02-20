@@ -1,16 +1,16 @@
 # Respostas das Questões
 
 #### 1. Explique com suas palavras a diferença entre a utilização de var, const e let?
-R:
+R: var e let são muito parecidos, os dois podem ser modificados. A única diferença entre eles são o escopo, com o var funcionando globalmente e o let apenas dentro de seu bloco declarado. Já o const não pode ser modificado, não pode-se reatribuir um valor à ele.
 
 #### 2. Assinale a(s) diferença(s) entre Funções normais e Arrow Functions?
-R:
+R: Arrow Functions possui um contexto léxico, elas possuem o contexto local de onde foi declarado. Diferentemente das funções normais, que possuem um contexto dinâmico, ou seja, possuem o contexto de onde são chamadas.
 
 #### 3. Qual o valor da constante name após a execução da função?
-R:
+R: "James"
 
 #### 4. Qual o retorno da função event.getTitle()
-R:
+R: "The event 04/02/2019 will take place on Event Test"
 
 #### 5. Quais são as formas de selecionar um elemento na DOM e qual a diferença entre elas?
 R:
