@@ -13,9 +13,9 @@ R: "James"
 R: "The event 04/02/2019 will take place on Event Test"
 
 #### 5. Quais são as formas de selecionar um elemento na DOM e qual a diferença entre elas?
-R: document.getElementById: retorna um elemento passando o Id por parâmetro
-   document.getElementByClass: retorna uma lista de elementos passando sua classe por parâmetro
-   document.querySelectorAll: retorna uma lista de elementos passando qualquer seletor por parâmetro
+R: document.getElementById: retorna um elemento passando o Id por parâmetro;
+   document.getElementByClass: retorna uma lista de elementos passando sua classe por parâmetro;
+   document.querySelectorAll: retorna uma lista de elementos passando qualquer seletor por parâmetro;
 
 #### 6. Como inserir um evento em determinado elemento?
 R: Com a função element.addEventListener, passando o tipo do evento e a callback por parâmetro
@@ -38,14 +38,14 @@ R: É um objeto que abrange eventos assíncronos, criando a "promessa" de que um
 Declaramos como: new Promise(/*o que será executado*/ /*callback ->*\function(resolve, reject) { /*conteúdo da callback*/ });
 
 #### 12. Liste 3 formas de iterar um Array em javascript e explique a diferença entre cada um deles?
-R: For in: Itera sobre as propriedades de um objeto.
-   For of: Itera sobre as propriedades enumeraveis de um objeto
-   For each: recebe uma função como callback, que é executada em cada elemento do array
+R: For in: Itera sobre as propriedades de um objeto;
+   For of: Itera sobre as propriedades enumeraveis de um objeto;
+   For each: recebe uma função como callback, que é executada em cada elemento do array;
 
 #### 13. Quando utilizar map, reduce ou filter?
-R: map: quando quiser retornar um novo array, com base em cada chamada da função callback em cima dos elementos do array
-   filter: quando quiser retornar o mesmo array, mas filtrado com base em cada chamada da função callback em cima dos elementos do array
-   reduce: quando quiser retornar apenas um único valor, acumulando os valores do array utilizando um acumulador e o valor inicial como parametros.
+R: map: quando quiser retornar um novo array, com base em cada chamada da função callback em cima dos elementos do array;
+   filter: quando quiser retornar o mesmo array, mas filtrado com base em cada chamada da função callback em cima dos elementos do array;
+   reduce: quando quiser retornar apenas um único valor, acumulando os valores do array utilizando um acumulador e o valor inicial como parametros;
 
 #### 14. Qual o método do Array é mais indicado para remover elementos?
 R: O mais ideal é remover com pop() o ultimo elemento do array, mas nem sempre é possível. Por isso deve ser usado o método splice(), para pegar uma determinada parte de um array, removendo as outras.
