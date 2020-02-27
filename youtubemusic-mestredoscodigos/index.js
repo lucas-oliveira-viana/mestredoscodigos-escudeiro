@@ -1,5 +1,4 @@
-const carousel_items = [
-    {
+const carousel_items = [{
         title: 'Mix de lançamentos',
         sub: 'Atualizada recentemente',
         img: 'img/mix_lancamentos.jpg'
@@ -76,6 +75,36 @@ window.onload = function () {
         imgElement.style.backgroundSize = "cover";
     }
 
+    function checkIfWillHideChevrons() {
+        const carouselContent = $('.carousel__content');
+        const carouselItems = $('.carousel__items');
+
+        let lastChevronIndex = undefined
+
+        for (let index = 0; index < carouselContent.length; index++) {
+
+            let chevronIndexStart = lastChevronIndex + 1 || 0
+            let chevronIndexEnd = lastChevronIndex + 2 || 1
+
+            for (let chevronIndex = chevronIndexStart; chevronIndex <= chevronIndexEnd; chevronIndex++) {
+
+                if (carouselContent[index].offsetWidth === carouselItems[index].offsetWidth) {
+                    $(".chevron")[chevronIndex].style.display = 'none'
+                } else {
+                    $(".chevron")[chevronIndex].style.display = 'block'
+                }
+            }
+
+            lastChevronIndex = chevronIndexEnd;
+        }
+    };
+
+    checkIfWillHideChevrons();
+
+    window.addEventListener('resize', function() {
+        checkIfWillHideChevrons();
+    })
+
     (function changeNavbarBackgroundOnScroll() {
         window.onscroll = function () {
             const navbar = $('.navbar')[0];
@@ -107,7 +136,7 @@ window.onload = function () {
             });
         };
     }());
-    
+
     (function actionsButtonOnClickPrevious() {
         const carouselPrevious = $(".chevron__left");
         const carouselNext = $(".chevron__right");
