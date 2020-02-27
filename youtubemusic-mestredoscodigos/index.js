@@ -44,47 +44,51 @@ const $ = function (selector) {
     return document.querySelectorAll(selector);
 }
 
-const moveQuantity = 1000;
-const carouselMarginWidth = 56;
-
-window.onload = function () {
-    (function applyCarouselsItems() {
-        const numberOfItemsByCarousel = $(".carousel__item").length / $(".carousel").length;
-        for (let carouselItem = 0; carouselItem < numberOfItemsByCarousel; carouselItem++) {
-            applyItemProperties(carouselItem, 0);
-            applyItemProperties(carouselItem, 1);
-        }
-    }());
-
-    function applyItemProperties(carouselItem, carouselNumber) {
-        const titleElement = document.createElement('p');
-        const subtitleElement = document.createElement('p');
-
-        titleElement.classList.add('item__title', `item__title_${carouselItem}`)
-        subtitleElement.classList.add('item__subtitle', `item__subtitle_${carouselItem}`)
-
-        titleElement.innerHTML = carousel_items[carouselItem].title;
-        subtitleElement.innerHTML = carousel_items[carouselItem].sub;
-
-        $(`.carousel__item_${carouselItem}`)[carouselNumber].append(titleElement);
-        $(`.carousel__item_${carouselItem}`)[carouselNumber].append(subtitleElement);
-
-        const imgElement = $(`.carousel__img_${carouselItem}`)[carouselNumber];
-        imgElement.style.background = `url(${carousel_items[carouselItem].img})`;
-        imgElement.style.backgroundRepeat = "no-repeat";
-        imgElement.style.backgroundSize = "cover";
+function checkScrollBackground() {
+    const navbar = $('.navbar')[0];
+    if (this.scrollY >= 10) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
     }
+}
 
-    (function changeNavbarBackgroundOnScroll() {
-        window.onscroll = function () {
-            const navbar = $('.navbar')[0];
-            if (this.scrollY >= 10) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
+    const moveQuantity = 1000;
+    const carouselMarginWidth = 56;
+
+    window.onload = function () {
+        (function applyCarouselsItems() {
+            const numberOfItemsByCarousel = $(".carousel__item").length / $(".carousel").length;
+            for (let carouselItem = 0; carouselItem < numberOfItemsByCarousel; carouselItem++) {
+                applyItemProperties(carouselItem, 0);
+                applyItemProperties(carouselItem, 1);
             }
-        };
-    }());
+        }());
+
+        function applyItemProperties(carouselItem, carouselNumber) {
+            const titleElement = document.createElement('p');
+            const subtitleElement = document.createElement('p');
+
+            titleElement.classList.add('item__title', `item__title_${carouselItem}`)
+            subtitleElement.classList.add('item__subtitle', `item__subtitle_${carouselItem}`)
+
+            titleElement.innerHTML = carousel_items[carouselItem].title;
+            subtitleElement.innerHTML = carousel_items[carouselItem].sub;
+
+            $(`.carousel__item_${carouselItem}`)[carouselNumber].append(titleElement);
+            $(`.carousel__item_${carouselItem}`)[carouselNumber].append(subtitleElement);
+
+            const imgElement = $(`.carousel__img_${carouselItem}`)[carouselNumber];
+            imgElement.style.background = `url(${carousel_items[carouselItem].img})`;
+            imgElement.style.backgroundRepeat = "no-repeat";
+            imgElement.style.backgroundSize = "cover";
+        }
+
+        checkScrollBackground();
+
+        (function changeNavbarBackgroundOnScroll() {
+                window.onscroll = checkScrollBackground
+        }());
 
     (function actionsButtonOnClickNext() {
         const carouselNext = $(".chevron__right");
@@ -151,8 +155,6 @@ function checkIfWillHideChevrons() {
 
             if (carouselContent[index].offsetWidth === carouselItems[index].offsetWidth) {
                 $(".chevron")[chevronIndex].style.display = 'none'
-            } else {
-                $(".chevron")[chevronIndex].style.display = 'block'
             }
         }
 
