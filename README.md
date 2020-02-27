@@ -38,9 +38,9 @@ R: É um objeto que abrange eventos assíncronos, criando a "promessa" de que um
 Declaramos como: new Promise(/*o que será executado*/ /*callback ->*\function(resolve, reject) { /*conteúdo da callback*/ });
 
 #### 12. Liste 3 formas de iterar um Array em javascript e explique a diferença entre cada um deles?
-R: For in: Itera sobre as propriedades de um objeto;
-   For of: Itera sobre as propriedades enumeraveis de um objeto;
-   For each: recebe uma função como callback, que é executada em cada elemento do array;
+R: map: retorna um novo Array;
+   filter: retorna o mesmo array, mas filtrado;
+   every: verifica se todos os elementos do array passa em um determinado teste;
 
 #### 13. Quando utilizar map, reduce ou filter?
 R: map: quando quiser retornar um novo array, com base em cada chamada da função callback em cima dos elementos do array;
@@ -51,22 +51,32 @@ R: map: quando quiser retornar um novo array, com base em cada chamada da funç�
 R: O mais ideal é remover com pop() o ultimo elemento do array, mas nem sempre é possível. Por isso deve ser usado o método splice(), para pegar uma determinada parte de um array, removendo as outras.
 
 #### 15. Cite 4 métodos presentes na API de strings do Javascript e explique cada um deles;
-R:
+R: toString(): Retorna o objeto em que é usado em String;
+toUpperCase(): Retorna a string em que é usado em letra maiúscula;
+toLowerCase(): Retorna a string em que é usado em letra minuscula;
+split(): divide a string em arrays dado uma string como parametro;
 
 #### 16. Escreva um código para inserir e resgatar items do LocalStorage/SessionStorage
-R:
+R: Inserir -> localStorage.setItem('Nome', 'Lucas');
+Resgatar -> localStorage.getItem('Nome');
+
+Inserir -> sessionStorage.setItem('Nome', 'Lucas');
+Resgatar -> sessionStorage.getItem('Nome');
 
 #### 17. Qual a melhor forma para definir um cookie utilizando javascript?
-R:
+R: utlizando a propriedade document.cookie, que pode ser usada para inserir e obter cookies.
+Para definir o cookie, é usado no formato document.cookie = 'chave=valor'.
 
 #### 18. Quais os tipos de Loops existentes em javascript?
-R:
+R: For in: Itera sobre as propriedades de um objeto;
+   For of: Itera sobre as propriedades enumeraveis de um objeto;
+   For each: recebe uma função como callback, que é executada em cada elemento do array;
 
 #### 19. Descreva com suas palavras o que é hoisting?
-R:
+R: É a elevação da prioridade de execução das funções no momento de compilação do código, fazendo-as serem executadas primeiro que as demais propriedades.
 
 #### 20. Em um ambiente do browser. Qual o valor do this utilizando "use-strict"?
-R:
+R: valor window
 
 #### 21. Quando eu posso utilizar o "Use-strict" no meu código?
-R:
+R: no topo do codigo e no topo das funções
